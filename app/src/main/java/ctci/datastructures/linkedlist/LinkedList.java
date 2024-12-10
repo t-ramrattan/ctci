@@ -21,4 +21,14 @@ public class LinkedList<T> {
 
         this.end = node;
     }
+    public boolean contains(T data) {
+        var tmp = this.head;
+        while (tmp != null) {
+         if (tmp.getData().equals(data)) {
+             return true;
+         }
+         tmp = tmp.getNext();
+        }
+        return false;
+    }
 }

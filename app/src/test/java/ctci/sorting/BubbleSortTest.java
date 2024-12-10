@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class BubbleSortTest {
     @Test
     public void sortTest() {
-        var input = Util.randIntegerArray(10);
+        var input = Util.randIntegerArray(10, 100);
         var expected = Arrays.copyOf(input, input.length);
         Arrays.sort(expected);
         BubbleSort.sort(input);
